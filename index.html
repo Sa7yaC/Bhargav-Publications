@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Leaflet JS for Maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/42dbd23984.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="/Images/footerlogo.png">
+    <title>Bhargav Publications</title>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <img height="50" width="175" src="BHARGAV LOGO 1.png" alt="LOGO">
+        <nav class="elements">
+            <!-- Navigation Links -->
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#about-us">About</a>
+            <a href="#footer-option">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section / Banner -->
+    <div class="banner">
+        <h1>Providing Quality Educational <br><span>Content for Students and Teachers</span></h1>
+        <button>Explore our books</button>
+    </div>
+
+    <!-- Books Section -->
+    <div class="books">
+        <!-- Images of featured books -->
+        <div class="book1">
+            <img height='250' src="./Images/CURSIVE 1.jpg">
+        </div>
+        <div class="book2">
+            <img height='250' src="./Images/EVS 1.jpg">
+        </div>
+        <div class="book3">
+            <img height='250' src="./Images/SULEKH 0.jpg">
+        </div>
+        <div class="book4">
+            <img height='200' src="./Images/DRAWING 1.jpg">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <h3>Why choose our books?</h3>
+        <div class="featurestabs">
+            <!-- Feature 1 -->
+            <div class="feature1">
+                <div class="text">
+                    <h1>Comprehensive Curriculum Coverage</h1>
+                    <h3>Our books align with the latest educational standards, covering UKG to Class 12 syllabi
+                        thoroughly.</h3>
+                </div>
+                <div class="illustration">
+                    <img height="380" src="/Images/Feature1.png">
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature2">
+                <div class="illustration">
+                    <img height="320" src="/Images/Feature2.png">
+                </div>
+                <div class="text">
+                    <h1>Engaging and Student-Friendly Content</h1>
+                    <h3>Simplified explanations, colorful illustrations, and interactive exercises to make learning fun
+                        and effective.</h3>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature3">
+                <div class="text">
+                    <h1>Expertly Curated by Educators</h1>
+                    <h3>Developed by experienced teachers and subject experts to ensure accuracy and clarity.</h3>
+                </div>
+                <div class="illustration">
+                    <img height="380" src="/Images/Feature 3.png">
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature4">
+                <div class="illustration">
+                    <img height="320" src="/Images/Feature 4.png">
+                </div>
+                <div class="text">
+                    <h1>Supplementary Learning Materials</h1>
+                    <h3>Includes practice papers, sample questions, and digital resources to aid exam preparation.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="aboutus" id="about-us">
+        <div class="heading">
+            <h3>About us</h3>
+        </div>
+        <div class="component">
+            <!-- Company Information -->
+            <div class="abouttext">
+                <h2><b>Bhargav Publications Private Limited</b> is a recently established private company in India,
+                    incorporated on August 21, 2024. It operates under the jurisdiction of the Registrar of Companies
+                    (ROC) in Kanpur, Uttar Pradesh. The company specializes in the publishing of journals and
+                    periodicals and is currently active.</h2>
+                <h3>Key Details:</h3>
+                <span>
+                    <h3>CIN (Corporate Identification Number): U58132UP2024PTC208136</h3>
+                    <h3>Registered Address: Piriya Khodan, Raksa, Jhansi, Uttar Pradesh, 284003, India.</h3>
+                </span>
+                <h3><b>Directors: Anamika Chaubey and Sushil Kumar Chaubey.</b></h3>
+            </div>
+            <div class="directorphoto">.</div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer" id="footer-option">
+        <div class="section1">
+            <!-- Company Information in Footer -->
+            <div class="companyinfo">
+                <img src="/Images/footerlogo.png">
+                <h3>Bhargav Publications Private Limited</h3>
+            </div>
+            <div class="contact">
+                <!-- Contact Email -->
+                <div class="email">
+                    <h3>
+                        <a href="mailto:info@bhargavpublications.in" target="_blank">
+                            <i class="fa-regular fa-envelope" style="color: #FFD43B;"></i> info@bhargavpublications.in
+                        </a>
+                    </h3>
+                </div>
+                <!-- WhatsApp Contact -->
+                <div class="phone">
+                    <h3>
+                        <a href="https://wa.me/917054727700" target="_blank">
+                            <i class="fa-brands fa-whatsapp" style="color: #19d600;"></i> +91 7054727700
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <!-- Quick Links -->
+            <h3>Quick link</h3>
+            <h4>
+                <a href="/careers" class="careers-link">Careers</a>
+            </h4>
+        </div>
+        <div class="section3">
+            <!-- Map Section -->
+            <h3>Locate us</h3>
+            <div id="map"></div> <!-- Map Container -->
+        </div>
+    </div>
+
+    <!-- Leaflet Map Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize map
+            const map = L.map('map').setView([25.4484253, 78.5698398], 15); // Coordinates for Jhansi
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker
+            L.marker([25.4484253, 78.5698398]).addTo(map)
+                .bindPopup('Piriya Khodan, Raksa, Jhansi, Uttar Pradesh, 284003, India.')
+                .openPopup();
+        });
+    </script>
+</body>
+
+</html>
