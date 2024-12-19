@@ -44,7 +44,7 @@
 
 /* ----------------------------- Banner Styles ----------------------------- */
 .banner {
-    background-image: url(/Images/Background.png);
+    background-image: url(./Images/Background.png);
     background-size: cover;
     text-align: center;
     padding: 40px;
